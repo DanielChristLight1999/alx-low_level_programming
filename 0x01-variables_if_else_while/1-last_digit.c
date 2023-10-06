@@ -3,7 +3,14 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/*This program will assign a random number to the variable n each time it is executed.  */
+/**
+ * main - Entry point of the program
+ *
+ * This function generates a random number, calculates its last digit, and prints
+ * information about the last digit.
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;
