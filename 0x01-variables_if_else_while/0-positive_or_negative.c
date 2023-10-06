@@ -8,8 +8,8 @@
  *
  * This program generates a random number,
  *  calculates whether the number is
- * positive, zero, or negative, 
- * and prints the correct message.
+ * positive, zero, or negative,
+ *  and prints the correct message.
  * Return: Always 0 (Success)
  */
 int main(void)
