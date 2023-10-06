@@ -3,7 +3,7 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/* betty style doc for function main goes there */
+/* This program prints random numbers and characters conditionally  */
 int main(void)
 {
 	int n;
@@ -16,6 +16,6 @@ int main(void)
 	else if (n % 10 == 0)
 		printf(" and is 0\n");
 	else
-		printf(" is less than 6 and not 0\n");
+		printf(" and is less than 6 and not 0\n");
 	return (0);
 }
