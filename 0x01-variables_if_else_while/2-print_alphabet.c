@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
  * main - Entry point of the program
  * This program uses putchar to print
