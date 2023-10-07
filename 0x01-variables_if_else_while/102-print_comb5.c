@@ -26,7 +26,7 @@ int main(void)
 					putchar(s_tens + '0');
 					putchar(s_ones + '0');
 
-					if (!(f_tens == 9 && f_ones == 9 && s_tens == 9 && s_ones == 9))
+					if (!(f_tens == 9 && f_ones == 8 && s_tens == 9 && s_ones == 9))
 					{
 						putchar(',');
 						putchar(' ');
