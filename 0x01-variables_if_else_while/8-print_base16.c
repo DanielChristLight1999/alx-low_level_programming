@@ -18,7 +18,7 @@ int main(void)
 	while (number <= 9)
 	{
 		putchar(number + '0');
-		number++
+		number++;
 	}
 
 	while (letter <= 'e')
