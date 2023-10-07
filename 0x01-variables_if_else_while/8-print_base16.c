@@ -21,7 +21,7 @@ int main(void)
 		number++;
 	}
 
-	while (letter <= 'e')
+	while (letter <= 'f')
 	{
 		putchar(letter);
 		letter++;
