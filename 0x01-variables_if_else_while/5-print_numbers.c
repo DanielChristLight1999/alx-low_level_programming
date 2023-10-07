@@ -15,11 +15,11 @@ int main(void)
 
 	while (number <= 9)
 	{
-		printf(number);
+		printf("%d", number);
 		number++;
 	}
 
-	printf('\n');
+	printf("\n");
 
 	return (0);
 }
