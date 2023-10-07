@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Check if CFILE variable exists
+if [ -z "$CFILE" ]; then
+	echo "CFILE is not set."
+	exit 1
+fi
+
+# Define output file name
+OUTPUT_FILE ="c"
+
+cpp -P "$CFILE" -o "$OUTPUT_FILE"
+
+echo "Preprocessing complete. Output saved in $OUTPUT_FILE"
