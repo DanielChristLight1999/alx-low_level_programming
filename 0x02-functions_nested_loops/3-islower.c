@@ -7,7 +7,7 @@
  *
  * This program checks if the input is lowercase
  *
- * Return: 1 if lowercase and 0 otherwise
+ * Return: 1 if @c lowercase and 0 otherwise
  */
 
 int _islower(int c)
