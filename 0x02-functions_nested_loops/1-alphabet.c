@@ -2,18 +2,18 @@
 #include "main.h"
 
 /**
- * main - Entry point of this program
+ * print_alphabet - Entry point of this program
  *
  * This program prints the alphabet in lowercase followed by a new line
  *
- * Return: Always 0 (Success)
+ * Return: Always void (Success)
  */
 
-int main(void)
+void print_alphabet(void)
 {
 	char letter = 'a';
 
-	while(letter < 'z')
+	while(letter <= 'z')
 	{
 		_putchar(letter);
 
@@ -21,6 +21,4 @@ int main(void)
 	}
 
 	_putchar('\n');
-
-	return (0);
 }
