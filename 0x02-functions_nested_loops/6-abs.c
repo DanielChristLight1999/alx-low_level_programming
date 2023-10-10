@@ -3,7 +3,8 @@
 #include <stdlib.h>
 
 /**
- * _abs - Computes the absolute value of an integer using the standard library function.
+ * _abs - Computes the absolute value of an integer
+ * using the standard library function.
  *
  * @n: The integer to find the absolute value of.
  *
@@ -12,5 +13,5 @@
 
 int _abs(int n)
 {
-	return(abs(n));
+	return (abs(n));
 }
