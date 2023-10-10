@@ -3,6 +3,7 @@
 #include <ctype.h>
 /**
  * _islower - Entry point to this program
+ * @c - parameter for character to be checked
  *
  * This program checks if the input is lowercase
  *
@@ -12,9 +13,6 @@
 int _islower(int c)
 {
 	if (islower(c))
-	{
 		return (1);
-	} else {
-		return (0);
-	}
+	return (0);
 }
