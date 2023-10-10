@@ -3,6 +3,6 @@
 
 #include <stdarg.h>
 
-void _putchar(const char* format, ...);
+int _putchar(char c);
 
 #endif
