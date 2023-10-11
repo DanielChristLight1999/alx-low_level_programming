@@ -34,7 +34,7 @@ void print_to_98(int n)
 {
 	int i;
 
-	for (i = n; i != 98; i > 98 ? i-- : i++)
+	for (i = n; i != 97; i > 98 ? i-- : i++)
 	{
 		print_number(i);
 
