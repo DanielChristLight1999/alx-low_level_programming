@@ -11,20 +11,20 @@
 
 int main(void)
 {
-	unsigned int fib1 = 1;
-	unsigned int fib2 = 2;
+	double fib1 = 1.0;
+	double fib2 = 2.0;
 	int i;
 
-	printf("%u, %u", fib1, fib2);
+	printf("%.0lf, %.0lf", fib1, fib2);
 
 	for (i = 3; i <= 98; i++)
 	{
-		unsigned int currentfib = fib1 + fib2;
+		double currentfib = fib1 + fib2;
 
 		if (i < 98)
-			printf(", %u", currentfib);
+			printf(", %.0lf", currentfib);
 		else
-			printf(", %u\n", currentfib);
+			printf(", %.0lf\n", currentfib);
 
 		fib1 = fib2;
 		fib2 = currentfib;
