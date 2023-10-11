@@ -11,20 +11,22 @@
 
 int main(void)
 {
-	long fib1 = 1;
-	long fib2 = 2;
-	long i;
+	int fib1 = 1;
+	int fib2 = 2;
+	int i;
 
-	printf("%lu, %lu", fib1, fib2);
+	printf("%d, %d", fib1, fib2);
 
 	for (i = 3; i <= 98; i++)
 	{
-		long currentfib = fib1 + fib2;
+		int currentfib = fib1 + fib2;
 
 		if (i < 98)
-			printf(", %lu", currentfib);
+			printf(", %d", currentfib);
 		else
-			printf(", %lu\n", currentfib);
+			printf(", %d\n", currentfib);
+		if (i % 10 == 0)
+			printf("\n");
 
 		fib1 = fib2;
 		fib2 = currentfib;
