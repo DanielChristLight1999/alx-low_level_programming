@@ -27,7 +27,7 @@ int main(void)
 		fib2 = currentfib;
 	}
 
-	printf("%lu\n", fibsum);
+	printf("%lu\n", (fibsum + 2));
 
 	return (0);
 }
