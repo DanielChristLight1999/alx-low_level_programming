@@ -11,18 +11,19 @@
 
 int main(void)
 {
-	unsigned long long fib1 = 1, fib2 = 2;
+	int fib1 = 1;
+	int fib2 = 2;
 
-	printf("%llu, %llu", fib1, fib2);
+	printf("%d, %d", fib1, fib2);
 
 	for (i = 3; i <= 50; i++)
 	{
-		unsigned long long currentfib = fib1 + fib2;
+		int currentfib = fib1 + fib2;
 
 		if (i < 50)
-			printf(", %llu", currentfib);
+			printf(", %d", currentfib);
 		else
-			printf(", %llu\n", currentfib);
+			printf(", %d\n", currentfib);
 
 		fib1 = fib2;
 		fib2 = currentfib;
