@@ -15,9 +15,9 @@ int main(void)
 	unsigned long fib2 = 2;
 	unsigned long limit = 4000000;
 	unsigned long fibsum = 0;
-	unsigned long currentfib;
+	unsigned long currentfib = fib1 + fib2;
 
-	while(currentfib < limit)
+	while (currentfib < limit)
 	{
 		currentfib = fib1 + fib2;
 
