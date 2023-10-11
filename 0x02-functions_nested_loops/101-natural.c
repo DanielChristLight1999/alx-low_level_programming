@@ -20,8 +20,7 @@ int main(void)
 			sum += i;
 	}
 
-	printf("%d", sum);
-	_putchar('\n');
+	printf("%d\n", sum);
 
 	return (0);
 }
