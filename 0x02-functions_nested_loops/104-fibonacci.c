@@ -11,8 +11,8 @@
 
 int main(void)
 {
-	long fib1 = 1.0;
-	long fib2 = 2.0;
+	long fib1 = 1;
+	long fib2 = 2;
 	long i;
 
 	printf("%lu, %lu", fib1, fib2);
