@@ -12,31 +12,37 @@
 void print_times_table(int n)
 {
 	int row, column, product;
-
-	for (row = 0; row <= n; row++)
+	if (!(n > 15 || n < 0))
 	{
-		for (column = 0; column <= n; column++)
+		for (row = 0; row <= n; row++)
 		{
-			product = row * column;
+			for (column = 0; column <= n; column++)
+			{
+				product = column * row;
 
-			if (column != 0)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
-			if (product >= 100)
-				print_number(product);
-			else
-			{
 				if (column != 0)
+				{
+					_putchar(',');
 					_putchar(' ');
-				print_number(product);
+				}
+				if (product >= 100)
+					print_number(product);
+				else if (product >= 10)
+				{
+					_putchar(' ');
+					print_number(product);
+				}
+				else
+				{
+					_putchar(' ');
+					_putchar(' ');
+					print_number(product);
+				}
 			}
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
-
 /**
  * print_number - The prints numbers using putchar.
  *
