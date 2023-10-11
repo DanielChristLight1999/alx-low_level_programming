@@ -38,7 +38,7 @@ void print_number(int n)
 	}
 	else if (n < 0)
 	{
-		putchar('-');
+		_putchar('-');
 		print_number(-n);
 	}
 }
