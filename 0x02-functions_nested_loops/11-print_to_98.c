@@ -9,42 +9,24 @@
  * Return: Always void
  */
 
-/**
- * print_number - Prints a number conditionally
- *
- * @n: The number to be printed
- *
- * This function prints a number. If the number is a single digit, it's printed
- * as is. If it's a multi-digit number, it's broken down into its individual
- * digits and printed.
- */
-
-
-void print_number(int n)
-{
-	if (n >= 0 && n <= 9)
-	{
-		_putchar(n + '0');
-	}
-	else if (n >= 10)
-	{
-		print_number(n / 10);
-		print_number(n % 10);
-	}
-	else if (n < 0)
-	{
-		_putchar('-');
-		print_number(-n);
-	}
-}
-
 void print_to_98(int n)
 {
 	int i;
 
 	for (i = n; i != 98; i > 98 ? i-- : i++)
 	{
-		print_number(i);
+		if (i >= 0 && i <= 9)
+			_putchar(i + '0');
+		else if (i >= 10)
+		{
+			_putchar((i / 10) + '0');
+			_putchar((i % 10) + '0');
+		}
+		else if (i < 0)
+		{
+			_putchar('-');
+			_putchar((-i) + '0');
+		}
 
 		if (i != 98)
 		{
@@ -52,6 +34,7 @@ void print_to_98(int n)
 			_putchar(' ');
 		}
 	}
-	print_number(98);
-	putchar('\n');
+	_putchar(9 + '0');
+	_putchar(8 + '0');
+	_putchar('\n');
 }
