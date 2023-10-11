@@ -10,12 +10,15 @@
  */
 
 /**
- * print_number - prints a number conditionally
+ * print_number - Prints a number conditionally
  *
- * @n: number to be printed
+ * @n: The number to be printed
  *
- * Return: Always void
+ * This function prints a number. If the number is a single digit, it's printed
+ * as is. If it's a multi-digit number, it's broken down into its individual
+ * digits and printed.
  */
+
 
 void print_number(int n)
 {
