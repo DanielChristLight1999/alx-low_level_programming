@@ -11,15 +11,15 @@
 
 int main(void)
 {
-	long unsigned int fib1 = 1;
-	long unsigned int fib2 = 2;
-	long unsigned int i;
+	long fib1 = 1;
+	long fib2 = 2;
+	long i;
 
 	printf("%lu, %lu", fib1, fib2);
 
 	for (i = 3; i <= 98; i++)
 	{
-		long unsigned int currentfib = fib1 + fib2;
+		long currentfib = fib1 + fib2;
 
 		if (i < 98)
 			printf(", %lu", currentfib);
