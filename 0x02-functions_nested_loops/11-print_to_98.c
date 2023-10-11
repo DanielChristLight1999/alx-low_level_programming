@@ -4,16 +4,22 @@
 /**
  * print_to_98 - Prints all natural numbers from @n to 98
  *
- * print_number - prints a number
- *
  * @n: number to be checked
+ *
+ * Return: Always void
+ */
+
+/**
+ * print_number - prints a number conditionally
+ *
+ * @n: number to be printed
  *
  * Return: Always void
  */
 
 void print_number(int n)
 {
-	if (n >= 0 && n <=9)
+	if (n >= 0 && n <= 9)
 	{
 		_putchar(n + '0');
 	}
