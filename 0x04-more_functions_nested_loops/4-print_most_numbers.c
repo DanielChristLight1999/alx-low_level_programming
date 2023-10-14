@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- * print_most_numbers - This function prints except 
+ * print_most_numbers - This function prints most candidates
  *
- * Return: Always return void
+ * Return: Always void
  */
 
 void print_most_numbers(void)
