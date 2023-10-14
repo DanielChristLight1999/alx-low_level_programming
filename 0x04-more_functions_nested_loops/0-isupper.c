@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 /**
- * main - This function checks for uppercase
+ * _isupper - This function checks for uppercase
  *
  * @c: The character to be checked
  *
