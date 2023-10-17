@@ -1,6 +1,7 @@
 #include <time.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include "main.h"
 
 #define PASSWORD_LENGTH 12
 
@@ -29,7 +30,7 @@ int main(void)
 
 	password[PASSWORD_LENGTH] = '\0';
 
-	printf("Generated password: %s\n", password);
+	printf("%s\n", password);
 
 	return (0);
 }
