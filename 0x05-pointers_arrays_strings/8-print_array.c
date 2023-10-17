@@ -10,7 +10,7 @@
  * Return: Always void
  */
 
-void print_array(char *a, int n)
+void print_array(int *a, int n)
 {
 	int i;
 
