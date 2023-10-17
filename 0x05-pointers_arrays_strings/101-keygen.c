@@ -3,8 +3,6 @@
 #include <stdio.h>
 #include "main.h"
 
-#define PASSWORD_LENGTH 12
-
 /**
  * main - Entry point of program
  *
@@ -15,20 +13,18 @@
 
 int main(void)
 {
-	const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-	char password[PASSWORD_LENGTH + 1];
 	int i;
+	int password_length;
+	char password[100];
 
 	srand(time(NULL));
 
-	for (i = 0; i < PASSWORD_LENGTH; i++)
-	{
-		int index = rand() % (sizeof(charset) - 1);
+	password_length = rand() % 10 + 10;
 
-		password[i] = charset[index];
-	}
+	for (i = 0; i < password_length; i++)
+		password[i] = rand() % 94 + 33;
 
-	password[PASSWORD_LENGTH] = '\0';
+	password[password_length] = '\0';
 
 	printf("%s\n", password);
 
