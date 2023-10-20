@@ -1,26 +1,24 @@
 #include "main.h"
+
 /**
- * print_number - The prints numbers using putchar.
+ * print_number - Prints an integer using putchar.
+ * @n: The integer to be printed.
  *
- * @n: number to be printed.
- *
- * This program takes a number and prints as characters.
- *
- * Return:Always void
+ * Return: Always void
  */
 
 void print_number(int n)
 {
-	if (n >= 0 && n <= 9)
-		_putchar(n + '0');
-	else if (n >= 10)
-	{
-		print_number(n / 10);
-		print_number(n % 10);
-	}
-	else if (n < 0)
+	unsigned int num = n;
+
+	if (n < 0)
 	{
 		_putchar('-');
-		print_number(-n);
+		num = -num;
 	}
+
+	if ((num / 10) > 0)
+		print_number(num / 10);
+
+	_putchar((num % 10) + '0');
 }
